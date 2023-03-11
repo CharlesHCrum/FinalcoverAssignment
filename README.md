@@ -16,6 +16,7 @@ for the rectangle. However I could not get this to work. I wasn't sure how I cou
 being able to edit the shapes after saving the image to a new file. 
 
 Resources: 
+
 https://stackoverflow.com/questions/41635841/manipulating-canvas-children-c-sharp-wpf
 https://stackoverflow.com/questions/40323022/how-can-i-capture-an-entire-image-from-a-canvas
 https://www.codeproject.com/Questions/824429/How-can-I-get-an-Image-to-render-on-a-WPF-Canvas
