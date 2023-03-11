@@ -1,0 +1,44 @@
+﻿<Window x:Class="FinalcoverAssignment.PaintWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalcoverAssignment"
+        mc:Ignorable="d"
+        Title="PaintWindow" Height="600" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="600" />
+        </Grid.ColumnDefinitions>
+        <!--600x600 transparent canvas with the image as background-->
+        <StackPanel Grid.Column="1">
+            <Canvas Width="600" Height="600" Name="icanvas" MouseMove="mouseMove" MouseDown="mouseDown" MouseUp="mouseUp"/>
+        </StackPanel>
+        <!-- Left side panel to put the color palette  -->
+        <StackPanel Grid.Column="0" Background="Gray">
+            <StackPanel Orientation="Horizontal" Width="70" >
+                <Button Name="Black" Background="Black" Width="25" Height="25" Margin="5" Click="Black_Click"/>
+                <Button Name="White" Background="White" Width="25" Height="25" Margin="5" Click="White_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="70">
+                <Button Name="Red" Background="Red" Width="25" Height="25" Margin="5" Click="Red_Click"/>
+                <Button Name="Yellow" Background="Yellow" Width="25" Height="25" Margin="5" Click="Yellow_Click" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="70">
+                <Button Name="Orange" Background="Orange" Width="25" Height="25" Margin="5" Click="Orange_Click"/>
+                <Button Name="Green" Background="Green" Width="25" Height="25" Margin="5" Click="Green_Click" />
+            </StackPanel>
+            <!-- Save and Exit buttons  -->
+            <StackPanel Orientation="Horizontal" Width="70">
+                <Button x:Name="btnSave" Margin="0,15,20,0" Click="ButtonSave" Width="70">Save As</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="70">
+                <Button x:Name="btnExit" Margin="0,15,20,0" Click="ButtonExit" Width="70">Exit</Button>
+            </StackPanel>
+            <Label Name="XCoord" />
+            <Label Name="YCoord" />
+        </StackPanel>
+
+    </Grid>
+</Window>
