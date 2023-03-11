@@ -1,7 +1,7 @@
 # FinalcoverAssignment
 Small application for drawing rectangles on an image.
 
-Running .exe file in the given folder will launch the program. The user is able to select an image file, open the file, and draw rectangles on the image. 
+Running .exe file in the "FinalcoverAssignment" folder will launch the program. The user is able to select an image file, open the file, and draw rectangles on the image. 
 The image will open in a "Paint" window, which has a minimal UI for the user to select colors and save the altered image to a new file.
 There are six colors for the user to select from. The user can click on a color and then click and drag the mouse to draw a rectangle of that color.
 They can also click on an already drawn rectangle, then click on a color to change the color of that rectangle. 
